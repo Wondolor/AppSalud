@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compatibilidades Sanguineas"
+        android:id="@+id/btnCompatibilidadesSanguineas" />
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="BMI"
+    android:layout_below="@+id/btnCompatibilidadesSanguineas"
+    android:id="@+id/btnBMI" />
+
+    <Button
+        android:id="@+id/btnTestAlcoholemia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test alcoholemia"
+        android:layout_below="@id/btnBMI"/>
+
+
+</RelativeLayout>

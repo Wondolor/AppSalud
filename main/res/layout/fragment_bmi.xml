@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textCalcularBMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular BMI"
+        android:layout_marginTop="6dp"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textCalcularPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Peso:"
+        android:layout_below="@+id/textCalcularBMI"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:id="@+id/ingPeso"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textCalcularPeso"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtAltura"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Altura:"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="3dp"
+        android:layout_below="@+id/ingPeso"
+        android:layout_alignStart="@+id/textCalcularPeso" />
+
+    <EditText
+        android:id="@+id/ingAltura"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtAltura"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnCalcularBMI"
+        android:layout_width="136dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Calcular"
+        android:textSize="20dp"
+        android:layout_below="@+id/ingAltura"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/txtBMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/btnCalcularBMI"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnVolverBMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Volver al menu"
+        android:textSize="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="5px"
+        android:layout_marginBottom="18dp" />
+
+</RelativeLayout>

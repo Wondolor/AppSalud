@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/txtTituloCompatibilidades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compatibilidad Sanguínea"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/txtTextoCompatibilidades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese los valores de los que quiere averiguar compatibilidad"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtPrimerValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Primer valor:" />
+
+    <Spinner
+        android:id="@+id/ingPrimerValor"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="3dp" />
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radPositivoNegativo1"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/radPositivoNegativo1" >
+
+        <RadioButton
+            android:id="@+id/radNegativo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Negativo (-)" />
+
+
+        <RadioButton
+            android:id="@+id/radPositivo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Positivo (+)" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radDonarRecibir"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/radDonarRecibir">
+
+        <RadioButton
+            android:id="@+id/radDonar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puede donarle a:" />
+
+        <RadioButton
+            android:id="@+id/radRecibir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puede recibir de:" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/txtSegundoValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Segundo valor:" />
+
+    <Spinner
+        android:id="@+id/ingSegundoValor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RadioGroup
+        android:id="@+id/radPositivoNegativo2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/PositivoNegativo2"
+>
+        <RadioButton
+            android:id="@+id/radPositivo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Positivo (+):" />
+
+        <RadioButton
+            android:id="@+id/radNegativo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Negativo (-):" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalcularCompatibilidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/txtMostrarCompatibilidad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/btnVolverCompatibilidadesSanguineas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver al menu"
+        android:textSize="10dp" />
+
+
+</LinearLayout>

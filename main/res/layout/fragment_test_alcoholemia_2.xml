@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test de Alcoholemia"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:id="@+id/txtTestAlcoholemia" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Seleccione una bebida:"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txtSeleccionBebida"
+        android:layout_below="@+id/txtTestAlcoholemia"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/TipoBebida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSeleccionBebida"
+        android:layout_alignStart="@+id/Respuesta"
+        android:layout_marginTop="5dp">
+    </Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Seleccione una medida:"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txtSeleccionMedida"
+        android:layout_below="@+id/TipoBebida"
+        />
+
+    <Spinner
+        android:id="@+id/MedidaBebida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSeleccionMedida"
+        android:layout_centerVertical="true">
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginLeft="5dp"
+        android:text="Seleccione la cantidad:"
+        android:id="@+id/txtSeleccionCantidad"
+        android:layout_below="@+id/MedidaBebida" />
+
+    <Spinner
+        android:id="@+id/CantidadBebida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSeleccionCantidad"
+        >
+    </Spinner>
+
+    <Button
+        android:id="@+id/btnCalcularAlcohol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/redondeado_alcohol"
+        android:textColor="#FFFFFF"
+        android:text="Calcular"
+        android:layout_below="@+id/CantidadBebida"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/Respuesta"
+        android:layout_above="@+id/MedidaBebida"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btnVolverAlcohol2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver al menu"
+        android:textSize="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="7dp" />
+</RelativeLayout>
